@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/favicon.ico">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="bower_components/timesheet.js/dist/timesheet.min.css">
+    <link rel="stylesheet" href="bower_components/timesheet.js/dist/timesheet-white.min.css">
+  </head>
+  <body>
+    <!-- Content from first index.html file -->
+    <div id="header">
+      <div class="container">
+          <nav>
+              <img src="images/logo.png" class="logo">
+              <ul id="sidemenu">
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#education">Education</a></li>
+                  <li><a href="#experiences">Experiences</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <i class="fas fa-times" onclick="closemenu()"></i>
+              </ul>
+              <i class="fas fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+              <p>SWE @ <a href="https://access-ci.org/" style="color: white;">ACCESS</a></p>
+              <h1>Hi, I'm <span>Nowshin</span><br>Anber, your little SWE!</h1>
+          </div>
+      </div>
+  </div>
+  <!-- -----------about---------- -->
+  <div id="about">
+      <div class="container">
+          <div class="row">
+              <div class="about-col-1">
+                  <img src="images/user.png">
+              </div>
+              <div class="about-col-2">
+                  <h1 class="sub-title">About Me</h1>
+                  <p>Hi there! I'm a sophomore at Florida International University studying Computer Science and a little SWE at heart. When I'm not busy being a full-time foodie, I work part-time as a returning SWE at ACCESS and a student tutor at FIU STARS.</p><br>
+  <p>In my free time, I love to experiment with new technologies, especially exploring the endless possibilities of AI. My passion lies in Software Engineering and High Performance Computing, and I'm constantly seeking opportunities to expand my knowledge in these areas.</p><br>
+  <p>Want to know more about me? Scroll down to learn more about my experiences and achievements. 😊</p>
+  
+                  <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('technical-skills')">Technical Skills</p>
+                      <p class="tab-links" onclick="opentab('language')">Languages</p>
+                      <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="technical-skills">
+                      <ul>
+                          <li><span>Languages</span><br>Java, Python, HTML, CSS, Javascript, C, SQL, Dart, Flutter
+                          </li>
+                          <li><span>Technologies</span><br>Vue.js, node.js,  jQuery, AJAX, JSON, Google Cloud Platform (GCP), CDN, REST API, timesheet.js, Git </li>
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id="language">
+                      <ul>
+                          <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                          <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                          <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+                          <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                      </ul>
+                  </div>
+                  <div class="tab-contents" id="achievements">
+                      <ul>
+                          <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                          <li><span>2016</span><br>MBA from MIT Bangalore.</li>
+                          <li><span>2014</span><br>BBA from ISM Bangalore.</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- ---------education---------------- -->
+
+<div id="education">
+  <div class="container">
+    <div class="row">
+      <div class="fiu-pic">
+        <img src="images\fiu-pic.jpg">
+      </div>
+      <div class="education-title">
+        <h1 class="sub-title">Florida International University</h1><br>
+        <p><span style="color: #64FDDA;">Major:</span> Computer Science (B.S.) <br> <br>
+          <span style="color: #64FDDA;">Expected Graduation:</span> May 2026 <br> <br>
+          <span style="color: #64FDDA;">GPA: </span> 3.97 (Dean's List - Spring 2022, Fall 2022, Spring 2023)<br> <br>
+          <span style="color: #64FDDA;">Honor's College</span>(from fall 2022) <br> <br>
+          <span style="color: #64FDDA;">Relevant Coursework: </span> <br> <br>
+           <ul style="margin-left: 40px;">
+            <li>Programming I & II (Java)</li>
+            <li>Intro to Web Development (CodePath)</li>
+            <li>Data Structures & Algorithm (AlgoExpert)</li>
+            <li>Calc I & II</li>
+            <li>Discrete Structures</li>
+            <li>Probability & Stats for CS</li>
+            <li>Cooperative Education in Computing</li>
+           </ul> <br>
+           <span style="color: #64FDDA;">Associations:</span> INIT FIU (former Upsilon Pi Epsilon), Women in Computer Science (WICS),
+            Women in Cyber Security (WiCyS) <br>
+            <span style="color: #64FDDA;">Scholarships:</span>  FIU Undergraduate Presidential Merit Scholarship, SGA Undergraduate Excellence & Resident Scholarship Recipient
+
+        </p>
+      </div>
+    </div>
+  </div>
+</div>  
+<!-- ---------experiences---------------- -->
+<div id="experiences">
+    <div class="container">
+        <h1 class="sub-title">My experiences</h1>
+        <div class="experiences-list">
+            <!-- My visible experiences here -->
+            <div class="experience visible">
+                <i class="fas fa-code"></i>
+                <h2>SWE @ ACCESS</h2>
+                <h3>May 2023 - Present</h3> <br>
+                <p>Worked as a SWE intern at ACCESS for STEP internship; created embeddable web apps using Vue & other frameworks to be used inside Drupal and other portals; returning as a part-time SWE for fall 2023 & Spring 2024</p>
+                <a href="https://youtu.be/0oxaREQo714"><u>Watch Presentation</u></a>
+                <a href="https://operations.access-ci.org/step"><u>Learn More about ACCESS STEP Internship</u></a>
+            </div>
+
+            <div class="experience visible">
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <h2>CS Student Tutor @ STARS FIU</h2>
+                <h3>May 2023 - Present</h3> <br>
+                <p>Providing on-demand tutoring within the prestigious national computing corps called "Students in Technology, Academia, Research, and Service (S.T.A.R.S.)."
+                  <br>
+                  <br>
+                  Courses: <br>
+                  <br>
+                  1. Introduction to Programming/Programming I<br>
+                  2. Intermediate Java Programming/Programming II<br>
+                  3. Discrete Structures</p>
+                <a href="https://stars.cs.fiu.edu/"><u>Learn more</u></a>
+            </div>
+
+            <div class="experience visible">
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <h2>Undergarduate Research Assistant @ FIU</h2>
+              <h3>September 2022 - May 2023</h3> <br>
+              <p>Project: Nanoparticle Uptake Measurement with Computer Vision</p>
+              <a href="images\nanoparticle research.pdf"><u>More about my research</u></a>
+          </div>
+
+            <!-- My hidden experiences here -->
+            <!-- Adding my additional experiences here -->
+            <!-- Make sure to remove the "visible" class from the hidden experiences -->
+            
+            <div class="experience">
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <h2>Learning Assistant @ FIU</h2>
+              <h3>August 2022 - December 2022</h3> <br>
+              <p>Class: Calc I for Business (MAC 2233) under Professor Nelson Dela Rosa <br>
+                Collaborated with professor to enhance teaching methods, resulting in a 30% boost in student engagement and participation in a class of 50 students. Took one-credit STEM education seminar course (SMT 3931) to better prepare as an instructor.</p>
+          </div>
+          <div class="experience">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <h2>Peer Mentor & Content Creator @ DP Tutorials</h2>
+            <h3>May 2021 - May 2023</h3> <br>
+            <p>Provided college application mentorship to 100+ high school students across Bangladesh, India, Nepal, UAE & Japan through individual sessions every week. I also created informative blogs related to college application, studying abroad, and women in STEM for readers across nations</p>
+            <a href="https://dptutorials.net/"><u>More about my work and DP Tutorials</u></a>
+          </div>
+        </div>
+        <button id="load-more" class="btn" onclick="toggleExperiences()">See more</button>
+    </div>
+</div>
+
+
+  <!-- ----------projects------------ -->
+  <div id="projects">
+      <div class="container">
+          <h1 class="sub-title">My Projects</h1>
+          <div class="work-list">
+              <div class="work">
+                  <img src="images/work-1.png">
+                  <div class="layer">
+                      <h2>Infrastructure Location Map </h2>
+                      <h4>(Summer 2023 internship work demo)</h4> <br>
+                      <p>This Vue 3 web app fetches API data to show HPC infrustructure locations on a Google map. <br> <br>Key features:</p>                        <ul>
+                          <li>Markers for coordinates</li>
+                          <li>API-based details on hover</li>
+                          <li>click to redirect to Google Maps search</li>
+                        </ul>
+                      <a href="https://github.com/nowshin-108/Infrustructure-Location-Map.git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="images/work-2.png">
+                  <div class="layer">
+                      <h3>News Calendar</h3> <br>
+                      <h4>(Summer 2023 internship work demo)</h4> <br>
+                      <p>This Vue 3 web app employs vue-cal library to showcase REST API events on a user-friendly calendar. Users can select years, months, and view event details in a popover with a simple click. <br> <br>Key features:</p>                        <ul>
+                        <li>Neat calendar view with event title and time</li>
+                        <li>Popover for event details on click</li>
+                        <li>Visual indicator for daily event count</li>
+                      </ul>
+                    <a href="https://github.com/nowshin-108/Infrustructure-News-Calendar.git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="images/work-3.png">
+                  <div class="layer">
+                      <h3>Infrsutructure Timeline</h3> <br>
+                      <h4>(Summer 2023 internship work demo)</h4> <br>
+                      <p>This web app features a visually engaging timeline to showcase production project information.<br> <br>Key features:</p>
+                      <ul>
+                        <li>Timesheet.js framework for advanced visualization</li>
+                        <li>Color-coded timeline: red (overdue), yellow (upcoming deadline), green (ample time left)</li>
+                        <li>Projects ordered by end dates for clear timeline view.</li>
+                      </ul>
+                      <a href="https://github.com/nowshin-108/timesheet.js-Production-Timeline-WebApp.git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  </div>
+              </div>
+              <div class="work hidden">
+                <img src="images/work-4.png">
+                <div class="layer">
+                    <h3>Z-Surprise</h3> <br>
+                    <h4>:></h4> <br>
+                    <p>It's a surprise! <br> Coming Soon...</p>
+
+                    
+                    <a href="zbhokto.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/nowshin-108/Surprise-Date-Web-App-with-a-plot-twist-.git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+            </div>
+          </div>
+          <button id="load-more2" class="btn" onclick="toggleExperiences()">See more</button>
+      </div>
+  </div>
+  <!-- ----------contact------------- -->
+  <div id="contact">
+      <div class="container">
+          <div class="row">
+              <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p><i class="fas fa-paper-plane"></i> 07nowshin.anber@gmail.com</p>
+                  <p><i class="fas fa-phone-square-alt"></i> +1 561 589-9329</p>
+                  <div class="social-icons">
+                      <a href="https://www.linkedin.com/in/nowshin108anber/"><i class="fab fa-linkedin"></i></a>
+                      <a href="https://www.facebook.com/nowshin.anber.3"><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/nowshin._.anber/"><i class="fab fa-instagram"></i></a>
+                  </div>
+                  <a href="images\nowshin-resume-summer 2023.docx.pdf" download class="btn btn2">Download CV</a>
+              </div>
+              <div class="contact-right">
+                  <form name="submit-to-google-sheet">
+                      <input type="text" name="Name" placeholder="Your Name" required>
+                      <input type="email" name="Email" placeholder="Your Email" required>
+                      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                      <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+                  <span id="msg"></span>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>Copyright © Nowshin Anber. Made by Zsadi's Nanbe <i class="fas fa-heart"></i>
+        </p>
+        <h5><span style="color:#ababab;">Miami, FL</span></h5>
+
+      </div>
+  </div>
+<!-- ----------vue------------- -->
+    <div id="app"></div>
+    <div id="timesheet"></div>
+    <script>
+      document.querySelector('#load-more2').addEventListener('click', () => {
+          document.querySelectorAll('.work.hidden').forEach(work => {
+              work.classList.remove('hidden');
+          });
+      });
+  </script>
+    <script>
+      const loadMoreButton = document.querySelector('#load-more');
+  
+      loadMoreButton.addEventListener('click', () => {
+          // Show the hidden experiences
+          const hiddenExperiences = document.querySelectorAll('.experience:not(.visible)');
+          hiddenExperiences.forEach(experience => {
+              experience.classList.add('visible');
+          });
+      });
+    </script>
+    <script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+  
+      function opentab(tabname){
+          for(tablink of tablinks){
+              tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+      }
+  
+  </script>
+  
+  <script>
+  
+      var sidemeu = document.getElementById("sidemenu");
+  
+      function openmenu(){
+          sidemeu.style.right = "0";
+      }
+      function closemenu(){
+          sidemeu.style.right = "-200px";
+      }
+  
+  </script>
+  <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzxq6H5KD73qaM_2ZZUkDLtL_dmeKzzQVC5531gZQ99CmoN-aW6fUmozxJuvnIhHlOt/exec' 
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+              msg.innerHTML = "Message sent successfully"
+              setTimeout(function(){
+                  msg.innerHTML = ""
+              },5000)
+              form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    <script type="module" src="/src/main.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHynZ4efPp-Qtt_YkUqB4blU3kLVrTE1s&callback=initMap"></script> -->
+    <script src="bower_components/timesheet.js/dist/timesheet.min.js"></script>
+    <script src="timesheet.js"></script>
+  </body>
+</html>
